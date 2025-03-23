@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <title>Admin Panel</title>
+  </head>
+  <body>
+    <div class="header">
+        <div id="logo">LOGO</div>
+        <div class="nav">
+          <ul class="ul_nav">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Tournaments.html">Tournament</a></li>
+            <li><a href="/auth.html">Auth</a></li>
+            <li>News</li>
+          </ul>
+        </div>
+        <div class="lang">EN</div>
+      </div>
+    <div class="center_back">
+      <form method="post" action="/lib/auth.html" class="auth_block">
+        <div class="content">
+          <div class="title_auth">Signing In</div>
+          <div class="log_pass">
+            <input
+              class="login"
+              type="text"
+              placeholder="Username"
+              name="login"
+            />
+          </div>
+          <div class="log_pass">
+            <input
+              class="password"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+            <button class="login_but">Войти</button>
+          </div>
+        </div>
+      </form>
+      <div class="questions">
+        <input type="checkbox" name="_remember_me" checked />
+        Remember me
+        <a href="/" class="forgot">Forgot passoword?</a>
+      </div>
+    </div>
+    <div class="footer">
+        <div class="logos">
+          <img src="/img/facebook.png" alt="FB" />
+          <img class="x" src="/img/twitter.png" alt="X" />
+          <img src="/img/Google plus.png" alt="" />
+        </div>
+        <div class="rights">
+          © 2022 nK Group Inc. Developed in association with LoremInc.
+          IpsumCompany, SitAmmetGroup, CumSit and related <br />
+          logos are registered trademarks. and related logos are registered
+          trademarks or trademarks of id Software LLC in <br />
+          the U.S. and/or other countries. All other trademarks or trade names
+          are the property of their respective owners. All Rights Reserved.
+        </div>
+  </body>
+</html>
