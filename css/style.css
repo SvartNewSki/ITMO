@@ -48,13 +48,11 @@ a {
   font-size: 24px;
 }
 .nav {
-  /* justify-content: center; */
   margin-top: 28px;
   display: flex;
   flex-direction: row;
 }
 #logo {
-  /* margin-right: 10%; */
   margin-left: 5%;
   margin-top: 20px;
   font-size: 32px;
@@ -75,7 +73,6 @@ li {
   margin-top: 28px;
   margin-right: 10%;
 }
-/*=========*/
 
 .main {
   margin-top: 2rem;
@@ -114,7 +111,6 @@ li {
   width: 368px;
   margin-left: 36px;
 }
-/* ------ */
 .lower_block {
   display: flex;
   flex-direction: column;
