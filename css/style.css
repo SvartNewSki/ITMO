@@ -3,55 +3,90 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Outfit", sans-serif;
   font-weight: 400;
-  font-size: 20px;
   width: 100%;
   background-image: url(/img/Bez-názvu-1\ 1.svg);
   background-size: cover;
   color: #f0eff2;
   justify-content: center;
+  place-items: center;
 }
-
+.girl:hover {
+  transform: rotate(0.5turn);
+}
+.fire {
+  animation-name: circle-to-square;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+}
+@keyframes circle-to-square {
+  from {
+    width: 50px;
+    height: 50px;
+    background-color: #f498ad;
+  }
+  to {
+    width: 200px;
+    height: 200px;
+    background-color: #2e9aff;
+  }
+}
 a {
   text-decoration: none;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+  min-width: 60%;
+  display: grid;
+  grid-template-columns: 10% 30% 10%;
+  justify-content: space-between;
+  font-size: 24px;
 }
 .nav {
+  /* justify-content: center; */
   margin-top: 28px;
   display: flex;
   flex-direction: row;
 }
 #logo {
-  margin-right: 270px;
-  margin-left: 163px;
+  /* margin-right: 10%; */
+  margin-left: 5%;
   margin-top: 20px;
   font-size: 32px;
   font-weight: 700;
+  justify-content: center;
 }
 .ul_nav {
   margin: 0;
   display: flex;
   list-style: none;
-  margin-right: 326px;
+  margin-right: 3%;
 }
 li {
-  padding-right: 31px;
+  padding-right: 32px;
 }
 .lang {
-  margin-top: 31px;
-  margin-right: 171px;
+  display: flex;
+  margin-top: 28px;
+  margin-right: 10%;
 }
 /*=========*/
+
+.main {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .title {
   display: flex;
   justify-content: center;
-  font-size: 60px;
+  font-size: 96px;
   font-weight: 900;
 }
 .subtitle {
@@ -68,6 +103,7 @@ li {
   justify-content: center;
   flex-direction: row;
 }
+
 .text_title {
   display: flex;
   font-size: 48px;
@@ -136,7 +172,7 @@ li {
   display: flex;
   justify-content: left;
   margin-top: 28px;
-  width: 233px;
+  width: 232px;
   height: 56px;
 }
 .logos {
@@ -146,8 +182,8 @@ li {
   margin-bottom: 18px;
 }
 .x {
-  margin-left: 46.4px;
-  margin-right: 46.4px;
+  margin-left: 46px;
+  margin-right: 46px;
 }
 .rights {
   margin: auto;
@@ -156,7 +192,99 @@ li {
   justify-content: center;
   font-size: 13px;
   font-weight: 500;
-  width: 994px;
+  width: 80%;
   text-align: center;
   color: rgb(158, 145, 173);
+}
+.avatar {
+  width: 250px;
+  height: 250px;
+  border: 2px solid purple;
+}
+@media (max-width: 1440px) {
+  html,
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .title {
+    max-width: fit-content;
+  }
+
+  .header {
+    display: grid;
+    max-width: 80%;
+    margin: auto;
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  #logo {
+    margin-left: 5%;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: flex-start;
+  }
+
+  .nav {
+    font-size: 1.2rem;
+    grid-row: 2;
+    grid-column: 1/3;
+    justify-content: space-between;
+  }
+  .ul_nav {
+    margin: 0;
+  }
+  li {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .lang {
+    grid-column: 2;
+    margin-left: 5%;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: flex-end;
+  }
+  body {
+    place-items: center;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .postmain,
+  .tournament_announce {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    .text_lower_block {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+    }
+  }
+  .title {
+    margin: auto;
+    font-size: 1.5rem;
+  }
+  .titleRG {
+    font-size: 44px;
+  }
+  .text_block {
+    margin-left: 0px;
+  }
+  .game_title_announce {
+    font-size: 3.5rem;
+  }
+  .rights {
+    place-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .header {
+    max-width: fit-content;
+  }
 }

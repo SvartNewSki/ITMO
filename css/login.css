@@ -84,9 +84,17 @@ button:hover {
 .rights {
   margin-top: auto;
 }
-/* .auth_block {
-  flex: auto;
-  margin: auto;
-  justify-content: center;
-  max-width: 45%;
-} */
+@media (max-width: 1440px) {
+  body {
+    background-attachment: fixed;
+  }
+  .main_block {
+    padding-top: 5rem;
+    min-height: 32rem;
+  }
+  .center_back {
+    min-width: 18rem;
+  }
+  .footer {
+  }
+}
